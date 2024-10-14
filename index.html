@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryaan Verma - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Aryaan Verma</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#technologies">Technologies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center py-5 d-flex align-items-center position-relative" style="min-height: 100vh;">
+        <!-- Background Video -->
+        <video autoplay muted loop class="position-absolute w-100 h-100" style="object-fit: cover; z-index: -1;">
+            <source src="videos/background.mp4" type="video/mp4">
+            <img src="images/fallback.jpg" alt="Background image" class="w-100 h-100"> <!-- Fallback image -->
+        </video>
+    
+        <!-- Content Section -->
+        <div class="container position-relative">
+            <div class="row">
+                <!-- Image Section -->
+                <div class="col-md-4 fade-in" id="profile-image">
+                    <img src="images/profile.jpg" class="img-fluid rounded-circle" alt="Aryaan Verma" style="max-width: 200px;">
+                </div>
+                <!-- Text Section -->
+                <div class="col-md-8">
+                    <h1 class="display-4" id="name">Aryaan Verma</h1>
+                    <p class="lead fade-in" id="role1">Software Engineer</p>
+                    <p class="lead fade-in" id="role2">Backend Developer</p>
+                    <p class="lead fade-in" id="role3">Cloud Engineer</p>
+                    <a href="#projects" class="btn btn-lg btn-outline-light mt-3">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm Aryaan Verma, a senior at the University of Florida pursuing a Bachelor of Science in Computer Science with a minor in Mathematics. I'm passionate about building fast, scalable applications and enjoy the process of shipping products that solve real-world problems. I have experiences ranging from developing cloud-based tools and automating workflows at Franklin Templeton Investments to leading the creation of an offline education tracking app for underserved schools in Ghana. I enjoy automating processes and creating sustainable app infrastructure to grow as the app does. I hope to continue working on impactful projects that push me to grow as a developer and as a leader.
+            </p>
+            <p>
+                Outside of computer science, I'm fascinated by startups and innovative tech solutions. I'm currently involved in a biotechnology startup, where I'm exploring ways to merge technology with healthcare. It is fulfilling to me to be able to use my experience creating software applications that have a tangible effect on people. My goal is to continue building innovative products that make a meaningful difference in people's lives.
+            </p>
+            <p>
+                When I'm not coding/building, you'll find me dancing or in the gym. I co-founded Gator Bhangra, UF's Indian cultural Bhangra dance team, and still compete in Bhangra competitions today. I've traveled all over to Pittsburgh, Washington D.C., Cleveland, and many more cities for competitions. I also enjoy hitting the gym and training in weightlifting. Staying active and creative outside of tech keeps me balanced and driven.
+            </p>
+        </div>
+    </section>
+
+
+
+   <!-- Technologies Section with Infinite Loop -->
+    <section id="technologies" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Technologies Learned</h2>
+            <div class="loop-carousel">
+                <div class="carousel-track">
+                    <!-- Original set of icons -->
+                    <img src="images/python-icon.png" alt="Python" class="tech-icon">
+                    <img src="images/java-icon.png" alt="Java" class="tech-icon">
+                    <img src="images/cpp-icon.png" alt="C++" class="tech-icon">
+                    <img src="images/golang-icon.png" alt="Golang" class="tech-icon">
+                    <img src="images/dart-icon.png" alt="Dart" class="tech-icon">
+                    <img src="images/aws-icon.png" alt="AWS" class="tech-icon">
+                    <img src="images/gcp-icon.png" alt="Google Cloud" class="tech-icon">
+                    <img src="images/azure-icon.png" alt="Azure" class="tech-icon">
+                    <img src="images/git-icon.png" alt="Git" class="tech-icon">
+                    <img src="images/django-icon.png" alt="Django" class="tech-icon">
+                    <img src="images/flutter-icon.png" alt="Flutter" class="tech-icon">
+                    <img src="images/sql-icon.png" alt="SQL" class="tech-icon">
+                    <!-- Duplicate set of icons for seamless looping -->
+                    <img src="images/python-icon.png" alt="Python" class="tech-icon">
+                    <img src="images/java-icon.png" alt="Java" class="tech-icon">
+                    <img src="images/cpp-icon.png" alt="C++" class="tech-icon">
+                    <img src="images/golang-icon.png" alt="Golang" class="tech-icon">
+                    <img src="images/dart-icon.png" alt="Dart" class="tech-icon">
+                    <img src="images/aws-icon.png" alt="AWS" class="tech-icon">
+                    <img src="images/gcp-icon.png" alt="Google Cloud" class="tech-icon">
+                    <img src="images/azure-icon.png" alt="Azure" class="tech-icon">
+                    <img src="images/git-icon.png" alt="Git" class="tech-icon">
+                    <img src="images/django-icon.png" alt="Django" class="tech-icon">
+                    <img src="images/flutter-icon.png" alt="Flutter" class="tech-icon">
+                    <img src="images/sql-icon.png" alt="SQL" class="tech-icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 ">
+        <div class="container">
+            <h2 class="text-center">Education</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="row no-gutters">
+                            <!-- Left: Education Info -->
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">University of Florida</h5>
+                                    <p class="card-text">Bachelor of Science in Computer Science</p>
+                                    <p class="card-text">Minor in Mathematics</p>
+                                    <p class="card-text">Herbert Wertheim College of Engineering</p>
+                                    <p class="card-text"><strong>GPA:</strong> 3.7</p>
+                                    <p class="card-text"><strong>Graduation Year:</strong> May 2025</p>
+                                </div>
+                            </div>
+
+                            <!-- Right: School Logo -->
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <img src="../images/uf-engineering-logo.png" alt="University of Florida Logo" class="img-fluid" style="max-width: 120px;" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Resume Button -->
+            <div class="text-center mt-4">
+                <a href="./download/Aryaan-Graduate-Resume.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i> View Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Experience Section with Cards and Modals -->
+    <section id="experience" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="row">
+                <!-- Experience 1: NeurOn -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/neuron-logo.png" class="card-img-top" alt="NeurOn Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">NeurOn (Dec 2022 - Present)</h5>
+                            <p class="card-text">Founding Engineer</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#neuronModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for NeurOn -->
+                <div class="modal fade" id="neuronModal" tabindex="-1" aria-labelledby="neuronModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="neuronModalLabel">NeurOn Therapy App</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> AWS, Django, Lambda Serverless functions, Twilio, Stripe, NextJS</p>
+                                <p>Developing an innovative research-backed stroke therapy app, leveraging AWS and serverless functions to assist patients in cognitive recovery.</p>
+                                <p>Led infrastructure implementation on AWS including creating a CI/CD pipeline, EC2 servers for production and testing, Lambda serverless functions for sending text messages to our users, RDS Postgres database to store patient and caregiver information, and Route53 DNS configuration with load balancing for scaling with user base. </p>
+                                <p>I am also working on creating landing pages through NextJS to implement custom signup, payment through Stripe, and dashboard viewing.</p>
+                                <p>We are currently preparing for our launch, so if you or a loved one have had a stroke or just simply want to improve your cognitive ability, sign up!</p>
+                                <a href="https://neurontherapy.io" target="_blank" class="btn btn-primary">View Product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: KARIBS Foundation Ghana -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/karibs-logo.png" class="card-img-top" alt="KARIBS Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">KARIBS Foundation Ghana (May 2024 - Aug 2024)</h5>
+                            <p class="card-text">Software Developer Intern </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#karibsModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for KARIBS -->
+                <div class="modal fade" id="karibsModal" tabindex="-1" aria-labelledby="karibsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="karibsModalLabel">KARIBS Foundation Ghana - KLAS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> Flutter, Dart, SQLite</p>
+                                <p>Developed an offline-capable educational tracking application for school districts in rural Ghana. The project aimed to bridge the gap in education management by providing a solution that allowed schools with limited internet access to monitor student performance, attendance, and progress. It also allows students to practice their skills with teacher-made exams.</p>
+                                <p> I implemented this app with a team of 4 peers using Flutter for cross-platform functionality, ensuring compatibility across Android devices commonly used in the region. SQLite was integrated to handle local data storage, allowing teachers to track student performance without needing constant access to the internet.</p>
+                                <p>Additionally, we collaborated closely with local educators and community leaders to ensure the application was user-friendly and addressed the specific challenges faced by the schools in the Ashanti region. This project contributed to improved educational management, making data-driven decisions easier for underfunded districts.</p>
+                                <a href="https://github.com/dexterfire861/Karibs" target="_blank" class="btn btn-primary">View GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: Franklin Templeton -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/franklin-logo.png" class="card-img-top" alt="Franklin Templeton Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Franklin Templeton Investments</h5>
+                            <p class="card-text">Cloud Engineering/DevOps Intern (June 2023 – Aug 2023)</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#franklinModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Franklin Templeton -->
+                <div class="modal fade" id="franklinModal" tabindex="-1" aria-labelledby="franklinModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="franklinModalLabel">Franklin Templeton Investments</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> Microsoft Azure, ServiceNow, Jira, CI/CD Pipelines</p>
+                                <p>As a Cloud Engineer Intern, I focused on automating infrastructure processes to enhance operational efficiency and ensure seamless tool management.</p>
+                                <p>I developed and implemented real-time status dashboards for monitoring critical tools within the company’s infrastructure like SonarQube, Jira, Jenkins, etc. These dashboards provided visibility into tool performance and helped teams proactively address issues.</p>
+                                <p>Additionally, I streamlined task management by creating a cloud pipeline that synchronized tickets between ServiceNow and Jira. This integration ensured consistent workflow tracking across different platforms and reduced discrepancies in task management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Experience 5: Cardiology App -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/DTE-logo.png" class="card-img-top" alt="Cardiology App Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Cardiology App (August 2021 - May 2024)</h5>
+                            <p class="card-text">Software Engineering Team Lead</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cardiologyModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Cardiology App -->
+                <div class="modal fade" id="cardiologyModal" tabindex="-1" aria-labelledby="cardiologyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="cardiologyModalLabel">Cardiology App</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> AWS, Three.js, DynamoDB, S3 </p>
+                                <p>Led a team in developing a 3-D cardiac modeling app for UF Shands Hospital to educate patients and doctors about LVAD heart surgery. The app used an 3-D modeling script that is able to process any CT scan and develop a 3-D model out of it that can be manipulated in space. We added in a LVAD (Left-Ventricular Assist Device) to allow doctors to experiment with different implant angles, and to allow patients to be educated on the surgical process. </p>
+                                <p>We integrated AWS services to securely store patient data and 3-D models when viewing and processing, then deleting it to comply with privacy rules. We used Three.JS to render the 3-D objects processed by our computing instance on AWS EC2.</p>
+                                <a href="https://cardiology-app.vercel.app/" target="_blank" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Projects Section with Cards and Modals -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <!-- Project 1: RideStork -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/ridestork-logo.png" class="card-img-top" alt="RideStork Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">RideStork - Hackathon Prize Winner</h5>
+                            <p class="card-text">RideStork is a carpool orchestration platform that optimizes matches and routes to reduce travel time and improve carpool efficiency for events.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rideStorkModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for RideStork -->
+                <div class="modal fade" id="rideStorkModal" tabindex="-1" aria-labelledby="rideStorkModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="rideStorkModalLabel">RideStork</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> Node.js, Auth0, MongoDB, Google Maps API</p>
+                                <p>Winner of the Auth0 Hackathon at ShellHacks, RideStork is a carpool orchestration platform that optimizes matches and routes. It uses Auth0 for secure authentication and integrates with Google Maps to calculate the most efficient routes for carpooling.</p>
+                                <p> We used a micro-service architecture to serve users' data served on a serverless Postgres instance on Supabase, Flask to employ our data processing pipeline, which was created with NextJS and React for the frontend. </p>
+                                <a href="https://devpost.com/software/ridestork-the-carpool-orchestrator" target="_blank" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Marathon Photo Processing Suite -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/marathon-logo.png" class="card-img-top" alt="Marathon Photo Processing Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Marathon Photo Processing Suite</h5>
+                            <p class="card-text">Automated system to categorize and label marathon photos using Google OCR and BIB numbers for quick and accurate photo retrieval.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#marathonModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Marathon Photo Processing -->
+                <div class="modal fade" id="marathonModal" tabindex="-1" aria-labelledby="marathonModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="marathonModalLabel">Marathon Photo Processing Suite</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> Google Cloud Vision, Python, Flask</p>
+                                <p>This photo processing suite was built for a marathon organizing company. It uses Google Cloud Vision to read BIB numbers from images and automatically categorizes photos based on participant information. This system greatly improved the company's ability to deliver race photos quickly and accurately.</p>
+                                <p>We used different manipulation techniques to get the system to detect BIB numbers by cropping photos and running the Cloud Vision model multiple times to get the best performance. The project was for a marathon organizing company that wanted to get pictures out fast after a race, and we used the different online technologies to streamline their outsourced manual process of labeling photos. </p>
+                                <p> I worked on this project in a team of three after graduating high school and it was a chance for us to get some experience with API's, scaling apps, and working for an actual company.</p>
+                                <a href="https://github.com/dexterfire861/SST-Photo-Processing-Suite" target="_blank" class="btn btn-primary">View GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: VibeShare App -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/vibeshare-logo.png" class="card-img-top" alt="VibeShare App Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">VibeShare App</h5>
+                            <p class="card-text">A social music-sharing app that allows users to create playlists and share their favorite songs with friends in real-time.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vibeshareModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for VibeShare App -->
+                <div class="modal fade" id="vibeshareModal" tabindex="-1" aria-labelledby="vibeshareModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="vibeshareModalLabel">VibeShare App</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> Golang (backend), React, Firebase, Spotify API</p>
+                                <p>VibeShare is a social music-sharing app that lets users curate playlists and share their favorite songs with friends in real-time. The app is built with a Golang backend and uses Firebase for real-time data synchronization.</p>
+                                <p>We implemented the Tinder UI for easy song selection for playlists, and integrated the app with spotify to create playlists directly in the music service.</p>
+                                <p>I was part of the backend team working with Golang to create an API that retrieved and put users into our Firebase storage, and queried the Spotify API to get songs selected and populated them throughout the database to the relevant users. </p>
+                                <a href="https://github.com/dexterfire861/musicApp" target="_blank" class="btn btn-primary">View GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Campus Research -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/uf-logo.png" class="card-img-top" alt="Campus Research Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Campus Research</h5>
+                            <p class="card-text">Research projects including Renewable Energy Law LLM analysis and a Database for academic research papers in CS.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#campusResearchModal">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Campus Research -->
+                <div class="modal fade" id="campusResearchModal" tabindex="-1" aria-labelledby="campusResearchModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="campusResearchModalLabel">Campus Research: Renewable Energy Law LLM Analysis & Database Project</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Technologies:</strong> LangChain, LiteLLM, RAG, ChromaDB, MySQL</p>
+                                <p>In a research project with Dr. Ji, a UF Food and Resource Economist, I developed a model using LangChain and ChromaDB to compare different LLMs' analysis of renewable energy laws documents with up to 80% accuracy. The pipeline used UF hosted LLM's like ChatGPT and Mistral and combined with publicly accessible LlaMa and Anthropic LLM's. </p>
+                                <p>Additionally, I created a comprehensive academic database under Dr. Butler of FICS (Florida Institute of Cybersecurity) to store and retrieve conference papers that is bigger than Google Scholar's resources for CS papers. I aggregated all of the notable conference papers from ACSAC, IEEE, AsiaCCS, etc. and made them queryable by conference, year, author, and also created functionality for authors and their co-authors, as well as search for papers by keywords in the paper.</p>
+                                <p>These projects were a great way to get experience with real-world applications of AI and databases, and I was able to work with some of the best professors to get a better understanding of the research process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or connect with me on my socials.</p>
+        
+        <!-- Social Links -->
+        <div class="my-4">
+            <!-- GitHub Link -->
+            <a href="https://github.com/dexterfire861" target="_blank" class="btn btn-outline-light mx-2">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/aryaanverma" target="_blank" class="btn btn-outline-light mx-2">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+
+        <!-- Email Button -->
+        <a href="mailto:verma.aryaan@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Email Me
+        </a>
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 Aryaan Verma. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (for modals) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    
+    
+    
+</body>
+</html>

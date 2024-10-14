@@ -1,0 +1,265 @@
+/* Custom CSS for portfolio */
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.main-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+
+
+/* Video Background Styling */
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Optional: Add a dark overlay to make text more readable */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+
+
+/* Hero Section Image */
+.hero img {
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Make the text and image responsive */
+@media (max-width: 768px) {
+    .hero img {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    
+}
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* For very small devices */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.875rem;
+    }
+}
+
+
+
+/* Ensure all cards have the same height */
+.card {
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Equal height for columns */
+.row .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn {
+    align-self: flex-end;
+}
+
+/* Optional: Add a border to the cards */
+.card {
+    border: 1px solid #0d4f92;
+}
+
+.btn:hover {
+    background-color: #0d4f92;
+    color: #fff;
+}
+
+/* Optional: Add a shadow to the cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add a border radius to the cards */
+.card {
+    border-radius: 10px;
+}
+
+/* Optional: Add a hover effect to the cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation-duration: 2s;
+}
+
+.card-title {
+    font-weight: bold;
+    font: 700 1.25rem 'Poppins', sans-serif;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    font: 400 1rem 'Poppins', sans-serif;
+    color: #555;
+}
+
+/* Modal Content Styling */
+.modal-content {
+    background-color: #f8f9fa;  /* Light background for contrast */
+    color: #000;  /* Black text for readability */
+}
+
+
+
+/* Optional: Button Styling inside Modals */
+.modal .btn {
+    background-color: #172b3f; /* Bootstrap Primary button */
+    color: #fff;
+}
+
+.modal-header {
+    background-color: #172b3f; /* Darker header background */
+    color: #fff; /* White text for contrast */
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+#role1 {
+    animation-delay: 1s;
+}
+
+#role2 {
+    animation-delay: 2s;
+}
+
+#role3 {
+    animation-delay: 3s;
+}
+
+#name {
+    font-weight: bold;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Fade-in animation for the profile image */
+#profile-image {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 0s;
+}
+
+/* Infinite Loop Carousel Styling */
+.loop-carousel {
+    overflow: visible;  /* Hide overflow */
+    position: relative;
+    width: 565%; /* Full width */
+    background-color: rgba(0, 0, 0, 0);  /* Opaque background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.6s ease-in-out;  /* Smooth scrolling effect */
+    transform: translateZ(0);  /* Hardware acceleration */
+    will-change: transform;  /* Optimize for performance */
+    animation: scroll-loop 60s linear infinite;  /* Continuous scrolling animation */
+}
+
+.carousel-track img {
+    flex: 0 0 auto;
+    max-width:60px;  /* Ensure the icons stay small */
+    max-height: 100px;
+    margin: 0 100px;
+    object-fit: contain;  /* Keep original aspect ratio */
+    
+    opacity: 0.6;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-track img:hover {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Continuous scroll effect */
+@keyframes scroll-loop {
+    0% {
+        transform: translateX(0);  /* Start at the beginning */
+    }
+    100% {
+        transform: translateX(-50%);  /* Move left continuously */
+    }
+}
+
+/* Pause animation on hover */
+.loop-carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+
+
+
